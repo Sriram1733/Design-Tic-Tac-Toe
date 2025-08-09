@@ -33,9 +33,9 @@ public class Board {
         }
     }
 
-    public boolean checkWin(Board board, char symbol) {
-        int size = board.getSize();
-        char[][] grid = board.getGrid();
+    public boolean checkWin(char symbol) {
+        int size = getSize();
+        char[][] grid = getGrid();
 
         // check rows and columns
         for (int i = 0; i < size; i++) {

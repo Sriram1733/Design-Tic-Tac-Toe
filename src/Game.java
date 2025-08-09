@@ -20,7 +20,7 @@ public class Game {
 
             player.makeMove(board);
 
-            if (board.checkWin(board, player.getSymbol())) {
+            if (board.checkWin(player.getSymbol())) {
                 board.printBoard();
                 System.out.println(player.getName() + " has won the game!!");
                 break;
